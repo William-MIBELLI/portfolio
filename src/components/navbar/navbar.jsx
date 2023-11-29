@@ -1,13 +1,11 @@
-import { Brand, Container, LinksContainer } from "./navbar.style";
+import Brand from "./brand/brand";
+import LinkContainer from "./link-container/link-container";
+import { Container } from "./navbar.style";
 
 const NavBar = () => {
     return <Container>
-        <Brand>
-            JE SUIS BRAND
-        </Brand>
-        <LinksContainer>
-            JE SUIS LINKSCONTAINER
-        </LinksContainer>
+        <Brand />
+        <LinkContainer/>
     </Container>;
 };
 
