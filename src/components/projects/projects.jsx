@@ -10,7 +10,7 @@ const p = {
 const Projects = () => {
     return (
         <Container>
-            <Title text={'My Projects'} />
+            <Title text={'Projects'} />
             <Project project={p}/>
             <Project project={p}/>
             <Project project={p}/>

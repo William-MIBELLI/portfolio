@@ -8,6 +8,7 @@ export const Container = styled.nav`
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 100;
 
 
 `

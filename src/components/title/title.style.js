@@ -24,4 +24,8 @@ export const Content = styled.h2`
         border-radius: 2px;
         background-color: ${props => props.theme.colors.purple_1};
     }
+
+    @media only screen and (max-width: 450px){
+        font-size: 2rem;
+    }
 `

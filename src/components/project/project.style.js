@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-around;
     max-width: 1300px;
     width: 80%;
@@ -34,7 +34,7 @@ export const Container = styled.div`
 `
 
 export const Capture = styled.img`
-    width: 40%;
+    width: 30%;
 `
 
 export const Description = styled.div`

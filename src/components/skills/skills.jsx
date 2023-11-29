@@ -1,7 +1,8 @@
 import Badge from "../badge/badge";
 import Button from "../button/button";
 import Title from "../title/title";
-import { Container, Content, Intro, Presentation, SkillsList, Text, SkillsContent, Component } from "./skills.style";
+import duck from '../../asset/duck.gif'
+import { Container, Content, Intro, Presentation, SkillsList, Text, SkillsContent, Component, Duck } from "./skills.style";
 
 const skills = [
     'Javascript',
@@ -18,7 +19,7 @@ const skills = [
 
 const Skills = () => {
     return (
-        <Component>
+        <Component id="skills">
             <Container>
                 <Title text={'About me'}/>
                 <Content>
@@ -45,6 +46,7 @@ const Skills = () => {
                     </SkillsList>
                 </Content>
             </Container>
+            <Duck src={duck} />
         </Component>
     )
 }
