@@ -21,7 +21,7 @@ const Project = ({ project, reversed = false }) => {
                 {
                     tags && tags.map(t => {
                         return (
-                            <Badge text={t}/>
+                            <Badge key={Math.random()} text={t}/>
                         )
                     })
                 }
