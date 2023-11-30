@@ -1,6 +1,6 @@
 
 import Button from "../button/button";
-import {  ClipPath, Component, Container, Description, Name, NameContainer, Text} from "./welcome.style";
+import {  ClipPath, Component, Container, Description, Name, NameContainer, Pixeled, Text} from "./welcome.style";
 
 const Welcome = () => {
 

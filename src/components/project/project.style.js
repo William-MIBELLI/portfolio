@@ -11,35 +11,29 @@ export const Container = styled.div`
     position: relative;
     margin-bottom: 60px;
 
-    @media only screen and (max-width: 750px){
+
+
+    @media only screen and (max-width: 900px){
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        div{
+        & > div{
             width: 100%;
         }
 
         img{
-            width: 60%;
+            width: 90%;
         }
     }
-
-    ${'' /* &::after{
-        content:'';
-        height: 3px;
-        width: 100%;
-        position: absolute;
-        background: ${props => props.theme.colors.purple_1};
-        top: calc(100% + 30px);
-    } */}
 `
 
 export const Capture = styled.img`
     width: 45%;
+    object-fit: contain;
 `
 
 export const Description = styled.div`
-    width: 40%;
+    width: 50%;
     padding: 1rem 0;
     height: 1fr;
     display: flex;
@@ -59,4 +53,14 @@ export const Name = styled.h3`
 
 export const Text = styled.p`
     color: ${props => props.theme.colors.text_2};
+`
+
+export const Tags = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media only screen and (max-width: 900px){
+        margin: 2rem 0;
+    }
 `

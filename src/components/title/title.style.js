@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+    margin-top : 6rem;
 `
 
 export const Content = styled.h2`

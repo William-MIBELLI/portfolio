@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Pixel from "../../svg/pixel";
 
 export const Component = styled.section`
     background-color: ${(props) => props.theme.colors.dark_1};
@@ -111,3 +112,5 @@ export const ClipPath = styled.div`
     }
     
 `
+
+

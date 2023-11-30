@@ -65,6 +65,7 @@ export const Intro = styled.h3`
     margin-bottom: 0;
     font-size: 1.8rem;
     font-weight: bold;
+    text-align: center;
 `;
 
 export const Text = styled.p`
@@ -84,6 +85,8 @@ export const SkillsContent = styled.div`
     display: flex;
     flex-wrap: wrap;
     margin-top: 2rem;
+    justify-content: center;
+    
 `;
 
 export const Duck = styled.img`
@@ -91,5 +94,11 @@ export const Duck = styled.img`
     height: 100px;
     position: absolute;
     right: 120px;
-    bottom: 100px;
+    bottom: -20px;
+
+    @media only screen and (max-width: 600px){
+        right: -15px;
+    }
 `
+
+

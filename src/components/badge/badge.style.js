@@ -6,5 +6,6 @@ export const Container = styled.div`
     padding: 0.5rem 1.5rem;
     margin: 10px;
     border-radius: 5px;
-    color: ${props => props.theme.colors.text_2};
+    font-weight: bold;
+    color: ${props => props.theme.colors.text_1};
 `

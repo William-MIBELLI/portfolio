@@ -14,7 +14,8 @@ const skills = [
     'HTML',
     'MongoDB',
     'MySQL',
-    'NodeJS'
+    'NodeJS',
+    'SocketIO'
 ]
 
 const Skills = () => {
