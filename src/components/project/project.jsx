@@ -1,14 +1,13 @@
 import { Capture, Container, Description, Name, Text } from "./project.style";
-import capture from '../../asset/capture_whatsup.png'
 import Button from "../button/button";
 
-const Project = ({ project }) => {
+const Project = ({ project, reversed = false }) => {
 
     const { name, description, imgUrl } = project
 
     return (
-        <Container>
-            <Capture src={capture} />
+        <Container $reversed={reversed}>
+            <Capture src={imgUrl} />
             <Description>
                 <Name>
                     {name}

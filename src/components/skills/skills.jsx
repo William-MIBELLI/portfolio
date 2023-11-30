@@ -6,12 +6,12 @@ import { Container, Content, Intro, Presentation, SkillsList, Text, SkillsConten
 
 const skills = [
     'Javascript',
+    'Typescript',
+    'CSS',
     'ReactJS',
     'Redux',
     'ExpressJS',
-    'Typescript',
     'HTML',
-    'CSS',
     'MongoDB',
     'MySQL',
     'NodeJS'
@@ -30,7 +30,7 @@ const Skills = () => {
                             I specialised myself into MERN stack, for being competitive and job-ready for industry.<br/><br/>
                             Take a look around, check my projects, my github, and feel free to contact me for any request, it will be a pleasure to exchange with you.
                         </Text>
-                        <Button text={'Projects'}/>
+                        <Button text={'Projects'} destination={'#projects'}/>
                     </Presentation>
                     <SkillsList>
                         <Intro>My skills</Intro>

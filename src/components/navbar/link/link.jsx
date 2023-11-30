@@ -1,8 +1,8 @@
 import { Container } from "./link.style";
 
-const Link = ({ text, clickHandler }) => {
+const Link = ({ text, destination }) => {
     return (
-        <Container onClick={clickHandler}>
+        <Container href={destination}>
             {text}
         </Container>
     )

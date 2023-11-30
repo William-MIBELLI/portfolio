@@ -9,7 +9,7 @@ const Welcome = () => {
     }
 
     return (
-        <Component>
+        <Component id="home">
             <Container>
                 <NameContainer>
                     <Name>
@@ -20,9 +20,7 @@ const Welcome = () => {
                     <Text>
                         As web developper, you can find out my skills ans differents projects.
                     </Text>
-                    <a href="#skills" behavior='smooth'>
-                        <Button text={'Dive in'}/>
-                    </a>
+                    <Button text={'Dive in'} destination={'#skills'}/>
                 </Description>
                 <ClipPath />
             </Container>

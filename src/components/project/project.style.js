@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
-    flex-direction: row;
+    flex-direction : ${({ $reversed }) => $reversed ? 'row' : 'row-reverse'};
+    background-color: ${props => props.$reversed ? props.theme.colors.dark_2 : 'transparent'};
+    backdrop-filter: blur(5px);
     justify-content: space-around;
     max-width: 1300px;
     width: 80%;
@@ -13,7 +15,6 @@ export const Container = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         div{
             width: 100%;
         }
@@ -23,26 +24,27 @@ export const Container = styled.div`
         }
     }
 
-    &::after{
+    ${'' /* &::after{
         content:'';
         height: 3px;
         width: 100%;
         position: absolute;
         background: ${props => props.theme.colors.purple_1};
         top: calc(100% + 30px);
-    }
+    } */}
 `
 
 export const Capture = styled.img`
-    width: 30%;
+    width: 45%;
 `
 
 export const Description = styled.div`
-    width: 50%;
+    width: 40%;
     padding: 1rem 0;
+    height: 1fr;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
 
 `
@@ -52,6 +54,7 @@ export const Name = styled.h3`
     font-size: 1.5rem;
     margin: 0;
     font-weight: bolder;
+    margin-right: auto;
 `
 
 export const Text = styled.p`

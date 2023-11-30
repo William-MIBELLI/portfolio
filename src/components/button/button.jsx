@@ -1,8 +1,8 @@
 import { Base } from "./button.style";
 
-const Button = ({ text, clickHandler }) => {
+const Button = ({ text, destination }) => {
     return (
-        <Base onClick={clickHandler}>{text}</Base>
+        <Base href={destination}>{text}</Base>
     )
 }
 
