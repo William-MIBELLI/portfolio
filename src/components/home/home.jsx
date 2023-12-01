@@ -1,3 +1,4 @@
+import Contact from "../contact/contact"
 import NavBar from "../navbar/navbar"
 import Projects from "../projects/projects"
 import Skills from "../skills/skills"
@@ -10,7 +11,8 @@ const Home = () => {
             <NavBar/>
             <Welcome />
             <Skills />
-            <Projects/>
+            <Projects />
+            <Contact/>
         </Container>
     )
 }

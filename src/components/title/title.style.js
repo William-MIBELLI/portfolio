@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: relative;
-    margin-bottom: 2rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
     margin-top : 6rem;
 `
 
@@ -12,7 +13,7 @@ export const Content = styled.h2`
     -webkit-text-fill-color: transparent;
     font-family: 'Press Start 2P';
     font-weight: normal;
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
 
     &::before{
@@ -26,7 +27,7 @@ export const Content = styled.h2`
         background-color: ${props => props.theme.colors.purple_1};
     }
 
-    @media only screen and (max-width: 450px){
-        font-size: 2rem;
+    @media only screen and (max-width: 550px){
+        font-size: 3rem;
     }
 `

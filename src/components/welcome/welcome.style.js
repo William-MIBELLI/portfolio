@@ -6,6 +6,7 @@ export const Component = styled.section`
     height: 100dvh;
     display: flex;
     justify-content: center;
+    position: relative;
 `;
 
 export const Container = styled.div`
@@ -39,7 +40,7 @@ export const Name = styled.h2`
     &::before {
         content: "";
         position: absolute;
-        right: calc(100% + 15px);
+        left: -20px;
         height: 100%;
         width: 8px;
         background-color: ${(props) => props.theme.colors.purple_2};
@@ -49,9 +50,8 @@ export const Name = styled.h2`
     }
 
     @media only screen and (max-width: 450px) {
-        font-size: 3.0rem;
+        font-size: 3rem;
     }
-
 `;
 
 export const Description = styled.div`
@@ -68,49 +68,35 @@ export const Text = styled.p`
     margin-bottom: 50px;
 `;
 
-export const Circle = styled.div`
-    width: 100vw;
-    height: 100vw;
-    border-radius: 50%;
-    background-color: ${(props) => props.theme.colors.dark_2};
-    z-index: -100;
-    position: absolute;
-    right: -50%;
-    top: -80%;
-    overflow-x: hidden;
-
-    @media only screen and (max-width: 900px){
-        bottom: -50%;
-    }
-
-    @media only screen and (max-width: 600px){
-        width: 150vw;
-        height: 150vw;
-        left: -75%;
-        bottom: -75%;
-    }
-`;
-
 export const ClipPath = styled.div`
     width: 60dvw;
     height: 60dvw;
-    background: ${props => props.theme.colors.dark_2};
+    background: ${(props) => props.theme.colors.dark_2};
     z-index: -100;
     position: absolute;
     top: 0;
     right: 0;
-    clip-path:  circle(86.3% at 99% 2%);
-    
-    @media only screen and (max-width: 1000px){
+    clip-path: circle(86.3% at 99% 2%);
+
+    @media only screen and (max-width: 1000px) {
         clip-path: circle(100% at 99% 2%);
     }
 
-    @media only screen and (max-width: 750px){
+    @media only screen and (max-width: 750px) {
         width: 100dvw;
         height: 100dvh;
         clip-path: circle(100% at 99% 2%);
     }
-    
-`
+`;
 
-
+export const CircleLeft = styled.div`
+    width: 700px;
+    height: 700px;
+    ${'' /* -webkit-clip-path: circle(49.1% at 0 100%); */}
+    clip-path: circle(49.1% at 0 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: ${props => props.theme.colors.dark_5};
+    z-index: -500;
+`;

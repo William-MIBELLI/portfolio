@@ -1,9 +1,10 @@
 import Project from "../project/project";
 import Title from "../title/title";
-import { Container } from "./projects.style";
+import { Container, More, MoreContainer } from "./projects.style";
 import resto from '../../asset/capture_resto.png'
 import shopwear from '../../asset/capture_shopwear.png'
 import whatsup from '../../asset/capture_whatsup.png'
+import Button from "../button/button";
 
 const whatsupP = {
     name: 'WhatsUP',
@@ -47,7 +48,11 @@ const Projects = () => {
             <Title text={'Projects'} />
             <Project project={whatsupP} />
             <Project project={restoP} reversed={true} />
-            <Project project={shopwearP}/>
+            <Project project={shopwearP} />
+            <MoreContainer>
+                <More>You can find more on my</More>
+                <Button text={'Github'}/>
+            </MoreContainer>
         </Container>
     )
 }

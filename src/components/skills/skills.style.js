@@ -60,7 +60,7 @@ export const Presentation = styled.div`
 `;
 
 export const Intro = styled.h3`
-    font-family: "Montserrat";
+    font-family: "Press Start 2P";
     color: ${(props) => props.theme.colors.purple_2};
     margin-bottom: 0;
     font-size: 1.8rem;
@@ -99,6 +99,18 @@ export const Duck = styled.img`
     @media only screen and (max-width: 600px){
         right: -15px;
     }
+`
+
+export const CircleRight = styled.div`
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -600;
+    -webkit-clip-path: circle(50% at 100% 66%);
+    clip-path: circle(50% at 100% 66%);
+    background-color: ${props => props.theme.colors.dark_5};
 `
 
 

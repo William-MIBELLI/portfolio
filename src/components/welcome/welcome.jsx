@@ -1,16 +1,19 @@
 
+import { useRef } from "react";
 import Button from "../button/button";
-import {  ClipPath, Component, Container, Description, Name, NameContainer, Pixeled, Text} from "./welcome.style";
+import {  CircleLeft, ClipPath, Component, Container, Description, Name, NameContainer, Text} from "./welcome.style";
 
 const Welcome = () => {
 
-    const onClickHandler = () => {
+    const endRef = useRef()
 
+    const onScrollHandler = event => {
+        console.log('scroll : ', event.target)
     }
 
     return (
-        <Component id="home">
-            <Container>
+        <Component id="home" ref={endRef} onScroll={onScrollHandler}>
+            <Container >
                 <NameContainer>
                     <Name>
                         William MIBELLI
@@ -23,7 +26,9 @@ const Welcome = () => {
                     <Button text={'Dive in'} destination={'#skills'}/>
                 </Description>
                 <ClipPath />
+                <CircleLeft/>
             </Container>
+            <div></div>
         </Component>
     )
 }

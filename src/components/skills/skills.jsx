@@ -2,7 +2,7 @@ import Badge from "../badge/badge";
 import Button from "../button/button";
 import Title from "../title/title";
 import duck from '../../asset/duck.gif'
-import { Container, Content, Intro, Presentation, SkillsList, Text, SkillsContent, Component, Duck } from "./skills.style";
+import { Container, Content, Intro, Presentation, SkillsList, Text, SkillsContent, Component, Duck, CircleRight } from "./skills.style";
 
 const skills = [
     'Javascript',
@@ -48,6 +48,7 @@ const Skills = () => {
                 </Content>
             </Container>
             <Duck src={duck} />
+            <CircleRight/>
         </Component>
     )
 }

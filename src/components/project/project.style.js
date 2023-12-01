@@ -5,13 +5,14 @@ export const Container = styled.div`
     flex-direction : ${({ $reversed }) => $reversed ? 'row' : 'row-reverse'};
     background-color: ${props => props.$reversed ? props.theme.colors.dark_2 : 'transparent'};
     backdrop-filter: blur(5px);
+    background: rgba(0,0,0, 0.8);
     justify-content: space-around;
     max-width: 1300px;
     width: 80%;
     position: relative;
     margin-bottom: 60px;
-
-
+    padding: 1rem;
+    box-sizing: border-box;
 
     @media only screen and (max-width: 900px){
         flex-direction: column;
@@ -44,7 +45,7 @@ export const Description = styled.div`
 `
 
 export const Name = styled.h3`
-    color: ${props => props.theme.colors.dark_4};
+    color: ${props => props.theme.colors.purple_2};
     font-size: 1.5rem;
     margin: 0;
     font-weight: bolder;
