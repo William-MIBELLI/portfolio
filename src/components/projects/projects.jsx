@@ -46,10 +46,10 @@ const Projects = () => {
     return (
         <Container id="projects">
             <Title text={'Projects'} />
-            <Project project={whatsupP} />
+            <Project project={whatsupP}/>
             <Project project={restoP} reversed={true} />
             <Project project={shopwearP} />
-            <MoreContainer>
+            <MoreContainer data-aos="fade-left">
                 <More>You can find more on my</More>
                 <Button text={'Github'}/>
             </MoreContainer>

@@ -8,7 +8,7 @@ const Project = ({ project, reversed = false }) => {
     const { name, description, imgUrl, tags } = project
 
     return (
-        <Container $reversed={reversed}>
+        <Container $reversed={reversed} data-aos="flip-up">
             <Capture src={imgUrl} />
             <Description>
                 <Name>

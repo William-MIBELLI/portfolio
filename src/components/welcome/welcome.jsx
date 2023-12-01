@@ -12,14 +12,14 @@ const Welcome = () => {
     }
 
     return (
-        <Component id="home" ref={endRef} onScroll={onScrollHandler}>
+        <Component  id="home" ref={endRef} onScroll={onScrollHandler}>
             <Container >
-                <NameContainer>
+                <NameContainer data-aos="fade-right">
                     <Name>
                         William MIBELLI
                     </Name>
                 </NameContainer>
-                <Description>
+                <Description data-aos="fade-left">
                     <Text>
                         As web developper, you can find out my skills ans differents projects.
                     </Text>

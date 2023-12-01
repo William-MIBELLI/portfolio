@@ -3,6 +3,7 @@ import Button from "../button/button";
 import Title from "../title/title";
 import duck from '../../asset/duck.gif'
 import { Container, Content, Intro, Presentation, SkillsList, Text, SkillsContent, Component, Duck, CircleRight } from "./skills.style";
+import { useEffect } from "react";
 
 const skills = [
     'Javascript',
@@ -19,12 +20,13 @@ const skills = [
 ]
 
 const Skills = () => {
+
     return (
         <Component id="skills">
             <Container>
                 <Title text={'About me'}/>
                 <Content>
-                    <Presentation>
+                    <Presentation data-aos="zoom-in-right">
                         <Intro>Hello there</Intro>
                         <Text>
                             I'm William, 35 years old, full stack developper ! My coding journey start 2 years ago with a web developpement graduate formation.<br/><br/>
@@ -33,7 +35,7 @@ const Skills = () => {
                         </Text>
                         <Button text={'Projects'} destination={'#projects'}/>
                     </Presentation>
-                    <SkillsList>
+                    <SkillsList data-aos="zoom-in-left">
                         <Intro>My skills</Intro>
                         <SkillsContent>
                             {
