@@ -1,8 +1,8 @@
 import { Base } from "./button.style";
 
-const Button = ({ text, destination }) => {
+const Button = ({ text, destination, blank = false }) => {
     return (
-        <Base href={destination}>{text}</Base>
+        <Base target={blank ? '_blank' : ''} href={destination}>{text}</Base>
     )
 }
 

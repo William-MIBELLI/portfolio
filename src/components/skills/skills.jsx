@@ -13,7 +13,10 @@ const skills = [
     'Redux',
     'ExpressJS',
     'HTML',
+    'Github',
+    'Responsive',
     'MongoDB',
+    'PHP',
     'MySQL',
     'NodeJS',
     'SocketIO'
@@ -29,7 +32,7 @@ const Skills = () => {
                     <Presentation data-aos="zoom-in-right">
                         <Intro>Hello there</Intro>
                         <Text>
-                            I'm William, 35 years old, full stack developper ! My coding journey start 2 years ago with a web developpement graduate formation.<br/><br/>
+                            I'm William, 35 years old, full stack developper. My coding journey start 2 years ago with a web developpement graduate formation.<br/><br/>
                             I specialised myself into MERN stack, for being competitive and job-ready for industry.<br/><br/>
                             Take a look around, check my projects, my github, and feel free to contact me for any request, it will be a pleasure to exchange with you.
                         </Text>
@@ -50,7 +53,7 @@ const Skills = () => {
                 </Content>
             </Container>
             <Duck src={duck} />
-            <CircleRight/>
+            <CircleRight data-aos='fade-left'/>
         </Component>
     )
 }

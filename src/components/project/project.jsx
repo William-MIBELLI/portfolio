@@ -5,7 +5,7 @@ import Badge from '../badge/badge'
 
 const Project = ({ project, reversed = false }) => {
 
-    const { name, description, imgUrl, tags } = project
+    const { name, description, imgUrl, tags, linkUrl } = project
 
     return (
         <Container $reversed={reversed} data-aos="flip-up">
@@ -26,7 +26,7 @@ const Project = ({ project, reversed = false }) => {
                     })
                 }
             </Tags>
-                <Button text={'Check it'}/>
+                <Button text={'Check it'} blank={true} destination={linkUrl}/>
             </Description>
         </Container>
     )

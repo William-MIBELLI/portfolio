@@ -21,6 +21,12 @@ export const MoreContainer = styled.div`
     padding: 1rem 0;
     background: ${props => props.theme.colors.purple_1};
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 500px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `
 
 export const More = styled.p`

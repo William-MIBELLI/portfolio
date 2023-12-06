@@ -14,19 +14,19 @@ const Welcome = () => {
     return (
         <Component  id="home" ref={endRef} onScroll={onScrollHandler}>
             <Container >
-                <NameContainer data-aos="fade-right">
+                <NameContainer data-aos="fade-down">
                     <Name>
                         William MIBELLI
                     </Name>
                 </NameContainer>
-                <Description data-aos="fade-left">
+                <Description data-aos="fade-up">
                     <Text>
-                        As web developper, you can find out my skills ans differents projects.
+                        Web developper. Here you can find out my differents skills and bunch of projects.
                     </Text>
                     <Button text={'Dive in'} destination={'#skills'}/>
                 </Description>
-                <ClipPath />
-                <CircleLeft/>
+                <ClipPath data-aos='fade-left'/>
+                <CircleLeft data-aos='fade-right'/>
             </Container>
             <div></div>
         </Component>

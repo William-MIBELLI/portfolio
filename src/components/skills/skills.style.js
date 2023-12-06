@@ -60,11 +60,12 @@ export const Presentation = styled.div`
 `;
 
 export const Intro = styled.h3`
-    font-family: "Press Start 2P";
-    color: ${(props) => props.theme.colors.purple_2};
+    font-family: "Montserrat";
+    color: ${(props) => props.theme.colors.text_1};
     margin-bottom: 0;
     font-size: 1.8rem;
     font-weight: bold;
+    font-style: italic;
     text-align: center;
 `;
 
@@ -86,6 +87,10 @@ export const SkillsContent = styled.div`
     flex-wrap: wrap;
     margin-top: 2rem;
     justify-content: center;
+
+    @media only screen and (max-width: 750px){
+        margin-bottom: 2rem;
+    }
     
 `;
 
@@ -96,7 +101,7 @@ export const Duck = styled.img`
     right: 120px;
     bottom: -20px;
 
-    @media only screen and (max-width: 600px){
+    @media only screen and (max-width: 750px){
         right: -15px;
     }
 `

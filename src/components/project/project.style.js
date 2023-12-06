@@ -63,5 +63,6 @@ export const Tags = styled.div`
 
     @media only screen and (max-width: 900px){
         margin: 2rem 0;
+        justify-content: center;
     }
 `
