@@ -30,6 +30,8 @@ export const Container = styled.div`
 
 export const Capture = styled.img`
     width: 45%;
+    max-height: 300px;
+    max-width: 45%;
     object-fit: contain;
 `
 

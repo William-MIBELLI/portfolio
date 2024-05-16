@@ -4,7 +4,20 @@ import { Container, More, MoreContainer } from "./projects.style";
 import resto from '../../asset/capture_resto.png'
 import shopwear from '../../asset/capture_shopwear.png'
 import whatsup from '../../asset/capture_whatsup.png'
+import ebc from '../../asset/ebc.png'
 import Button from "../button/button";
+
+const elBuenoCorneto = {
+    name: 'ElBuenoCorneto',
+    description: "A clone from LEBONCOIN. Eshop between individuals.",
+    imgUrl: ebc,
+    tags: [
+        'NextJS',
+        'Drizzle ORM',
+        'Postgres'
+    ],
+    linkUrl: 'https://elbuenocorneto.vercel.app/'
+}
 
 const whatsupP = {
     name: 'WhatsUP',
@@ -17,7 +30,7 @@ const whatsupP = {
         'Redux',
         'MongoDB'
     ],
-    linkUrl: 'https://master--whatsapp-clone-wm.netlify.app/login'
+    linkUrl: 'https://tchat-rtc.netlify.app/login'
 }
 
 const restoP = {
@@ -49,6 +62,7 @@ const Projects = () => {
     return (
         <Container id="projects">
             <Title text={'Projects'} />
+            <Project project={elBuenoCorneto}/>
             <Project project={whatsupP}/>
             <Project project={restoP} reversed={true} />
             <Project project={shopwearP} />
